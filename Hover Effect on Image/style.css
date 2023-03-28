@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: url(./sunrise-1014712__340.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.container h1{
+    position: absolute;
+    bottom: 100px;
+    left: 450px;
+    color: white;
+    transform: rotateX(-50%);
+}
+
+.inner-container{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 25%, rgba(37, 84, 192, 0.7) 50%, rgba(99, 65, 90, 0.6) 75%, rgba(19, 165, 82, 0.5) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: 400% 400%;
+    transition: 2s;
+    
+}
+
+.container:hover .inner-container{
+    background-position: 100% 100%;
+}
